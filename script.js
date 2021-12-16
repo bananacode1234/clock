@@ -19,4 +19,5 @@ function getDateTime() {
     setInterval(function(){
         currentTime = getDateTime();
         document.getElementById("time").innerHTML = currentTime;
+        document.querySelector("title").innerHTML = currentTime;
     }, 1000);
