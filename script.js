@@ -12,7 +12,7 @@ function getDateTime() {
         if(second.toString().length == 1) {
              second = '0'+second;
         }   
-        var dateTime = hour+':'+minute+' '+second+'s';   
+        var dateTime = hour+':'+minute+':'+second+'s';   
         return dateTime;
     }
 
