@@ -15,6 +15,9 @@ function getDateTime() {
     var dateTime = hour+':'+minute+':'+second+'s';   
     return dateTime;
 }
+currentTime = getDateTime();
+document.getElementById("time").innerHTML = currentTime;
+document.querySelector("title").innerHTML = currentTime;
 setInterval(function(){
     currentTime = getDateTime();
     document.getElementById("time").innerHTML = currentTime;
