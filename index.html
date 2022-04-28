@@ -2,26 +2,35 @@
 <html>
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Allerta&display=swap" rel="stylesheet">
-<title>Clock</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allerta&display=swap" rel="stylesheet">
+  <title>Clock</title>
 </head>
 <body>
-  <div id="clock"><h1 id="time">Loading...</h1></div><br><br><br>
+  <div id="container"><div id="clock"><h1 id="time">Loading...</h1></div></div><br><br>
   <a href="https://bananacode1234.github.io/">Home</a>
   <style>
-    body { font-family: sans-serif; }
+    body {
+      font-family: 'Courier New', Courier, monospace;
+    }
+    #container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     #clock {
-      border: 5px solid #FFFF00;
-      text-align: center;
-      background-color: turquoise;
-      border-radius: 45px
+      width: 50%;
+      background-color: rgb(151, 151, 151);
+      border-radius: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     #time {
       font-size: 80px;
       font-family: "Allerta", sans-serif;
     }
   </style>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
